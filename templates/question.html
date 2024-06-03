@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QAS</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Bree+Serif&family=Outfit&family=Overpass:wght@800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Bree+Serif&family=Outfit&family=Overpass:wght@800&family=Palanquin+Dark:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="QAShukum">
+  
+        <img src="{{ url_for('static', filename='LOGO KABUUTA.jpg') }}" width="120px" height="130px" alt="Logo Kabuuta Ask"><br><br>
+     
+           <h5> Kabuuta Ask <br><br>
+            Sistem Tanya Jawab sebagai informasi bidang hukum dan pemerintahan Indonesia. <br>
+            Informasi Bidang Hukum mengenai Undang-Undang Dasar Republik Indonesia Tahun 1945 dan
+            Undang-Undang Cipta Kerja sampai Bab III Paragraf 2. <br>
+            Informasi Bidang Pemerintahan mengenai Presiden, Wakil Presiden, Menteri-Menteri, Kabinet Pemerintahan Indonesia Era Reformasi.
+           <br><br>
+             Silahkan ketikkan pertanyaan Anda untuk mendapatkan informasi tersebut !</h5>
+           <form action="/Answer" method="post">
+             <label for="question" style="font-size: 20px;">Silahkan Ketikkan Pertanyaan:</label> <br>
+             <input type="text" id="question" name="question" required> <br><br>
+             <button type="submit">Cari Jawaban</button>
+           </form>
+       </div>
+</body>
+</html>

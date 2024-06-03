@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title %}
+    <title>Kabuuta Ask - {{ title }}</title>
+    {% else %}
+    <title>Kabuuta Ask</title>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Bree+Serif&family=Outfit&family=Overpass:wght@800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Bree+Serif&family=Outfit&family=Overpass:wght@800&family=Palanquin+Dark:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+  {% include 'header.html' %}
+
+      <main>
+        <div class="containerr">
+          <img src="{{ url_for('static', filename='test.jpg') }}">
+        </div>
+    
+        <br><br>
+    
+        <div class="headlineaktivitas">
+          <h2>Apa saja yang dapat dilakukan di</h2><br>
+          <h2>Kabuuta Ask ?</h2>
+        </div>
+    
+        <br> <br>
+    
+        <div class="aktivitas">
+          <div class="w3-transparent w3-hover-shadow" style="width: 40%; border-radius: 15px; ">
+              <a href="hukum.html" target="_blank">
+                  <img src="{{ url_for('static', filename='QAS.png') }}" alt="Modul QAS"></a>
+              <div class="w3-container w3-center w3-hover-text-dark-grey">
+                  <p class="w3-large"><b>Sistem Tanya Jawab Hukum <br>Tata Negara dan Pemerintahan</b></p>
+              </div>
+          </div>
+          <div class="w3-transparent w3-hover-shadow" style="width: 40%; border-radius: 15px; ">
+              <a href="Artikel.html" target="_blank">
+                  <img src="{{ url_for('static', filename='Artikel.png') }}" alt="Modul Artikel"></a>
+              <div class="w3-container w3-center w3-hover-text-dark-grey">
+                  <p class="w3-large"><b>Membaca Berita Bidang Hukum <br>dan Pemerintahan</b></p>
+              </div>
+          </div>
+        </div>
+      </main>
+      
+      <br><br>
+
+      <footer>
+        <div class="penutup">
+          <h6>2023</h6>
+        </div>
+      </footer>
+    
+    
+</body>
+</html>

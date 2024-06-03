@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% if title %}
+  <title>Kabuuta Ask - {{ title }}</title>
+  {% else %}
+  <title>Kabuuta Ask</title>
+  {% endif %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Bree+Serif&family=Outfit&family=Overpass:wght@800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Bree+Serif&family=Outfit&family=Overpass:wght@800&family=Palanquin+Dark:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+  {% include 'header.html' %}
+
+<main>
+<br>
+<div id="content">
+<div class="containerartikel">
+  <div class="artikel">
+    <div class="article">
+        <img src="{{ url_for('static', filename='img/Berita/Kompas/1.jpg') }}" alt="Gambar Artikel 1">
+        <a href="https://kilaskementerian.kompas.com/kemenkumham/read/2023/07/08/11430031/dukung-kemajuan-kekayaan-intelektual-indonesia-yasonna-hadiri-3-pertemuan" 
+        style="text-align: center;" target="_blank">
+        Dukung Kemajuan Kekayaan Intelektual Indonesia, Yasonna Hadiri 3 Pertemuan Bilateral di Swiss</a>
+    </div>
+    <div class="article">
+        <img src="{{ url_for('static', filename='img/Berita/Kompas/2.jpg') }}" alt="Gambar Artikel 2">
+        <a href="https://kilaskementerian.kompas.com/kemenkumham/read/2023/10/06/21100711/267-kelurahan-di-dki-jakarta-berpredikat-sadar-hukum-menkumham-berikan" 
+        style="text-align: center;" target="_blank">
+        267 Kelurahan di DKI Jakarta Berpredikat Sadar Hukum, Menkumham Berikan Apresiasi</a>
+    </div>
+    <div class="article">
+        <img src="{{ url_for('static', filename='img/Berita/Kompas/3.jpg') }}" alt="Gambar Artikel 3">
+        <a href="https://kilaskementerian.kompas.com/kemenkumham/read/2023/10/12/21155961/yasonna-minta-pemegang-tugas-dan-fungsi-di-hukum-manfaatkan-jdihn" 
+        style="text-align: center;" target="_blank">
+        Yasonna Minta Pemegang Tugas dan Fungsi di Hukum Manfaatkan JDIHN</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/4.jpg') }}" alt="Gambar Artikel 4">
+      <a href="https://kilaskementerian.kompas.com/kemenkumham/read/2023/08/03/16275641/kemenkumham-jadi-instansi-dengan-tata-kelola-pengadaan-asn-terbaik" 
+      style="text-align: center;" target="_blank">
+      Kemenkumham Jadi Instansi dengan Tata Kelola Pengadaan ASN Terbaik</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/5.jpg') }}" alt="Gambar Artikel 5">
+      <a href="https://kilaskementerian.kompas.com/kemenkumham/read/2023/08/07/16015491/1288-pegawai-pensiun-sekjen-kemenkumham-berbaktilah-dengan-cara-berbeda"
+      style="text-align: center;" target="_blank">
+      1.288 Pegawai Pensiun, Sekjen Kemenkumham: Berbaktilah dengan Cara Berbeda</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/6.jpg') }}" alt="Gambar Artikel 6">
+      <a href="https://kilaskementerian.kompas.com/kementerian-panrb/read/2023/10/25/16034111/sambut-budaya-kerja-digital-di-ikn-kemenpan-rb-integrasikan-sistem-manajemen" 
+      style="text-align: center;" target="_blank">
+      Sambut Budaya Kerja Digital di IKN, Kemenpan-RB Integrasikan Sistem Manajemen ASN</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/7.jpg') }}" alt="Gambar Artikel 7">
+      <a href="https://kilaskementerian.kompas.com/kemenkumham/read/2023/08/04/15581361/kemenkumham-raih-opini-wtp-14-kali-berturut-turut-yasonna-jelaskan"
+      style="text-align: center;" target="_blank">
+      Kemenkumham Raih Opini WTP 14 Kali Berturut-turut, Yasonna Jelaskan Rahasianya</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/8.jpg') }}" alt="Gambar Artikel 8">
+      <a href="https://kilaskementerian.kompas.com/kementerian-panrb/read/2023/10/31/14365811/menpan-rb-serukan-percepatan-mpp-di-berbagai-daerah-di-indonesia" 
+      style="text-align: center;" target="_blank">
+      Menpan-RB Serukan Percepatan MPP di Berbagai Daerah di Indonesia</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/9.jpg') }}" alt="Gambar Artikel 9">
+      <a href="https://kilaskementerian.kompas.com/kemenkumham/read/2023/08/03/09571341/kemenkumham-dorong-penggunaan-produk-dalam-negeri-di-kementerian-dan-lembaga" 
+      style="text-align: center;" target="_blank">
+      Kemenkumham Dorong Penggunaan Produk Dalam Negeri di Kementerian dan Lembaga Negara</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/10.jpg') }}" alt="Gambar Artikel 10">
+      <a href="https://kilaskementerian.kompas.com/kementerian-panrb/read/2023/11/02/21275081/pacu-reformasi-birokrasi-berdampak-kemenpan-rb-lakukan-pembinaan-inovasi" 
+      style="text-align: center;" target="_blank">
+      Pacu Reformasi Birokrasi Berdampak, Kemenpan-RB Lakukan Pembinaan Inovasi Pelayanan Publik</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/11.jpg') }}" alt="Gambar Artikel 11">
+      <a href="https://kilaskementerian.kompas.com/kemendes/read/2023/11/03/09510671/gus-halim-paparkan-3-keuntungan-negara-jika-libatkan-desa-untuk-kelola-data"
+      style="text-align: center;" target="_blank">
+      Gus Halim Paparkan 3 Keuntungan Negara jika Libatkan Desa untuk Kelola Data Sensus</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/12.jpg') }}" alt="Gambar Artikel 12">
+      <a href="https://kilaskementerian.kompas.com/kemendes/read/2023/10/26/11462131/benchmark-study-di-china-sukses-digelar-kemendesa-pdtt-jadi-referensi-kades"
+      style="text-align: center;" target="_blank">
+      Benchmark Study di China Sukses Digelar, Kemendesa PDTT: Jadi Referensi Kades untuk Bangun Desa</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/13.jpg') }}" alt="Gambar Artikel 13">
+      <a href="https://kilaskementerian.kompas.com/kementan/read/2023/11/02/170603626/ditjenbun-tingkatkan-pertumbuhan-ekonomi-nasional-melalui-program-pasti" 
+      style="text-align: center;" target="_blank">
+      Ditjenbun Tingkatkan Pertumbuhan Ekonomi Nasional melalui Program PASTI</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/14.jpeg') }}" alt="Gambar Artikel 14">
+      <a href="https://kilaskementerian.kompas.com/kementan/read/2023/11/01/180819926/hadiri-gerakan-nasional-ketahanan-pangan-2023-mentan-amran-gerakan-ini" 
+      style="text-align: center;" target="_blank">
+      Hadiri Gerakan Nasional Ketahanan Pangan 2023, Mentan Amran: Gerakan Ini Dampaknya Luar Biasa Bagi Negara</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/15.jpeg') }}" alt="Gambar Artikel 15">
+      <a href="https://kilaskementerian.kompas.com/kementan/read/2023/11/01/174048426/bpk-lakukan-supervisi-proker-kementan-di-kabupaten-situbondo"
+      style="text-align: center;" target="_blank">
+      BPK Lakukan Supervisi Proker Kementan di Kabupaten Situbondo</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/16.jpg') }}" alt="Gambar Artikel 16">
+      <a href="https://kilaskementerian.kompas.com/kementan/read/2023/10/30/175819226/alsintan-masih-dibutuhkan-petani-kementan-akan-evaluasi-kontrak"
+      style="text-align: center;" target="_blank">
+      Alsintan Masih Dibutuhkan Petani, Kementan Akan Evaluasi Kontrak</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/17.jpg') }}" alt="Gambar Artikel 17">
+      <a href="https://kilaskementerian.kompas.com/kementan/read/2023/10/29/131936426/gaji-dan-tunjangan-mentan-akan-diberikan-kepada-anak-yatim-piatu"
+      style="text-align: center;" target="_blank">
+      Gaji dan Tunjangan Mentan akan Diberikan kepada Anak Yatim Piatu</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/18.jpg') }}" alt="Gambar Artikel 18">
+      <a href="https://kilaskementerian.kompas.com/kemenkes/read/2023/06/28/15413681/mengenal-bgsi-layanan-kesehatan-presisi-untuk-cegah-dan-tangani-penyakit"
+      style="text-align: center;" target="_blank">
+      Mengenal BGSi, Layanan Kesehatan Presisi untuk Cegah dan Tangani Penyakit secara Akurat</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/19.jpeg') }}" alt="Gambar Artikel 19">
+      <a href="https://kilaskementerian.kompas.com/kemensos/read/2023/02/22/20255891/gandeng-kitabisacom-mensos-risma-serahkan-bantuan-rp-374-juta-untuk"
+      style="text-align: center;" target="_blank">
+      Gandeng Kitabisa.com, Mensos Risma Serahkan Bantuan Rp 374 Juta untuk Penyandang Disabilitas</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/20.jpg') }}" alt="Gambar Artikel 20">
+      <a href="https://kilaskementerian.kompas.com/kemendag/read/2023/11/02/11463441/mendag-zulhas-sebut-platform-digital-harus-bermanfaat-dan-tak-rugikan-umkm"
+      style="text-align: center;" target="_blank">
+      Mendag Zulhas Sebut Platform Digital Harus Bermanfaat dan Tak Rugikan UMKM</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/21.jpeg') }}" alt="Gambar Artikel 21">
+      <a href="https://kilaskementerian.kompas.com/kemenkominfo/read/2023/10/23/17592481/cegah-konflik-di-ruang-digital-menkominfo-kampanyekan-pemilu-damai-2024"
+      style="text-align: center;" target="_blank">
+      Cegah Konflik di Ruang Digital, Menkominfo Kampanyekan Pemilu Damai 2024</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/22.jpg') }}" alt="Gambar Artikel 22">
+      <a href="https://kilaskementerian.kompas.com/kemnaker/read/2023/11/03/100238326/lantik-dpp-apki-kemenaker-ingin-mereka-bantu-reformasi-pengawasan"
+      style="text-align: center;" target="_blank">
+      Lantik DPP APKI, Kemenaker Ingin Mereka Bantu Reformasi Pengawasan Ketenagakerjaan</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/23.jpg') }}" alt="Gambar Artikel 23">
+      <a href="https://kilaskementerian.kompas.com/kemen-kp/read/2023/11/01/20164511/bersama-politeknik-aup-kementerian-kp-evaluasi-penanaman-mangrove-di-banten"
+      style="text-align: center;" target="_blank">
+      Bersama Politeknik AUP, Kementerian KP Evaluasi Penanaman Mangrove di Banten</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/24.jpg') }}" alt="Gambar Artikel 24">
+      <a href="https://kilaskementerian.kompas.com/kemdikbud/read/2023/11/01/080000771/salurkan-pip-kepada-17-juta-siswa-selama-2022-kemendikbudristek-pastikan"
+      style="text-align: center;" target="_blank">
+      Salurkan PIP kepada 17 Juta Siswa Selama 2022, Kemendikbudristek Pastikan Tepat Sasaran</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/Kompas/25.jpeg') }}" alt="Gambar Artikel 25">
+      <a href="https://kilaskementerian.kompas.com/kemenko-perekonomian/read/2023/10/26/185250526/menko-airlangga-pengetatan-arus-barang-impor-lindungi-industri-dalam-negeri"
+      style="text-align: center;" target="_blank">
+      Menko Airlangga: Pengetatan Arus Barang Impor Lindungi Industri Dalam Negeri dan UMKM</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/26.jpeg') }}" alt="Gambar Artikel 26">
+      <a href="https://www.cnnindonesia.com/nasional/20231103162427-12-1019729/ketua-mkmk-ungkap-hakim-paling-bermasalah-yang-terbanyak-dilaporkan"
+      style="text-align: center;" target="_blank">
+      Ketua MKMK Ungkap Hakim Paling Bermasalah: Yang Terbanyak Dilaporkan</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/27.jpeg') }}" alt="Gambar Artikel 27">
+      <a href="https://www.cnnindonesia.com/nasional/20231103170240-12-1019747/kejati-ntb-usut-dugaan-korupsi-honor-stafsus-eks-gubernur-zul"
+      style="text-align: center;" target="_blank">
+      Kejati NTB Usut Dugaan Korupsi Honor Stafsus Eks Gubernur Zul</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/28.jpeg') }}" alt="Gambar Artikel 28">
+      <a href="https://www.cnnindonesia.com/nasional/20231103162739-12-1019733/daftar-16-tersangka-perkara-korupsi-proyek-bts-bakti-kominfo"
+      style="text-align: center;" target="_blank">
+      Daftar 16 Tersangka Perkara Korupsi Proyek BTS BAKTI Kominfo</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/29.jpeg') }}" alt="Gambar Artikel 29">
+      <a href="https://www.cnnindonesia.com/nasional/20231103135650-12-1019614/jimly-kantongi-rekaman-cctv-mk-kasus-ini-tak-sulit-membuktikan"
+      style="text-align: center;" target="_blank">
+      Jimly Kantongi Rekaman CCTV MK: Kasus Ini Tak Sulit Membuktikan</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/30.jpeg') }}" alt="Gambar Artikel 30">
+      <a href="https://www.cnnindonesia.com/nasional/20231103144525-12-1019643/jelang-diperiksa-anwar-usman-bantah-hambat-pembentukan-mkmk-permanen"
+      style="text-align: center;" target="_blank">
+      Jelang Diperiksa, Anwar Usman Bantah Hambat Pembentukan MKMK Permanen</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/31.jpeg') }}" alt="Gambar Artikel 31">
+      <a href="https://www.cnnindonesia.com/nasional/20231103141155-12-1019621/canda-jimly-sebut-mafia-peradilan-rakernas-tiap-tahun"
+      style="text-align: center;" target="_blank">
+      Canda Jimly Sebut 'Mafia Peradilan' Rakernas Tiap Tahun</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/32.jpeg') }}" alt="Gambar Artikel 32">
+      <a href="https://www.cnnindonesia.com/nasional/20231103134557-12-1019601/achsanul-terima-uang-rp40-m-sebelum-kasus-korupsi-bts-naik-penyidikan"
+      style="text-align: center;" target="_blank">
+      Achsanul Terima Uang Rp40 M Sebelum Kasus Korupsi BTS Naik Penyidikan</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/33.jpeg') }}" alt="Gambar Artikel 33">
+      <a href="https://www.cnnindonesia.com/nasional/20231103131908-12-1019585/polda-metro-jaya-kembali-periksa-firli-bahuri-selasa-7-november"
+      style="text-align: center;" target="_blank">
+      Polda Metro Jaya Kembali Periksa Firli Bahuri Selasa 7 November</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/34.jpeg') }}" alt="Gambar Artikel 34">
+      <a href="https://www.cnnindonesia.com/nasional/20231103124421-12-1019554/kejagung-achsanul-qosasi-terima-uang-rp40-m-juli-2022-di-hotel"
+      style="text-align: center;" target="_blank">
+      Kejagung: Achsanul Qosasi Terima Uang Rp40 M Juli 2022 di Hotel</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/35.jpeg') }}" alt="Gambar Artikel 35">
+      <a href="https://www.cnnindonesia.com/nasional/20231103123255-12-1019546/di-sidang-etik-pelapor-curigai-anwar-usman-tak-setujui-mkmk-permanen"
+      style="text-align: center;" target="_blank">
+      Di Sidang Etik, Pelapor Curigai Anwar Usman Tak Setujui MKMK Permanen</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/36.jpeg') }}" alt="Gambar Artikel 36">
+      <a href="https://www.cnnindonesia.com/nasional/20231103162035-12-1019724/kuasa-hukum-bantah-berkas-gugatan-almas-belum-ditandatangani"
+      style="text-align: center;" target="_blank">
+      Kuasa Hukum Bantah Berkas Gugatan Almas Belum Ditandatangani</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/37.jpeg') }}" alt="Gambar Artikel 37">
+      <a href="https://www.cnnindonesia.com/nasional/20231103182539-12-1019796/anwar-usman-siap-terima-konsekuensi-jika-terbukti-langgar-etik"
+      style="text-align: center;" target="_blank">
+      Anwar Usman Siap Terima Konsekuensi Jika Terbukti Langgar Etik</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/38.jpeg') }}" alt="Gambar Artikel 38">
+      <a href="https://www.cnnindonesia.com/nasional/20231102202656-12-1019372/10-pegawai-kementerian-esdm-didakwa-rugikan-negara-rp27-miliar"
+      style="text-align: center;" target="_blank">
+      10 Pegawai Kementerian ESDM Didakwa Rugikan Negara Rp27 Miliar</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/39.jpg') }}" alt="Gambar Artikel 39">
+      <a href="https://www.cnnindonesia.com/nasional/20231102185232-12-1019337/kemhan-periksa-sistem-keamanan-buntut-dugaan-peretasan-website"
+      style="text-align: center;" target="_blank">
+      Kemhan Periksa Sistem Keamanan Buntut Dugaan Peretasan Website</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/40.jpeg') }}" alt="Gambar Artikel 40">
+      <a href="https://www.cnnindonesia.com/nasional/20231102094036-12-1019001/tni-siapkan-dua-pesawat-hercules-untuk-kirim-bantuan-ke-palestina"
+      style="text-align: center;" target="_blank">
+      TNI Siapkan Dua Pesawat Hercules untuk Kirim Bantuan ke Palestina</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/41.jpeg') }}" alt="Gambar Artikel 41">
+      <a href="https://www.cnnindonesia.com/nasional/20231031145753-12-1018151/sidang-suap-perkara-ma-hasbi-hasan-terima-3-tas-mewah-uang-rp5-m"
+      style="text-align: center;" target="_blank">
+      Sidang Suap Perkara MA, Hasbi Hasan Terima 3 Tas Mewah & Uang Rp5 M</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/42.jpeg') }}" alt="Gambar Artikel 42">
+      <a href="https://www.cnnindonesia.com/nasional/20231031120814-12-1018078/densus-tangkap-40-terduga-teroris-jad-disebut-ingin-gagalkan-pemilu"
+      style="text-align: center;" target="_blank">
+      Densus Tangkap 40 Terduga Teroris JAD, Disebut Ingin Gagalkan Pemilu</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/43.jpeg') }}" alt="Gambar Artikel 43">
+      <a href="https://www.cnnindonesia.com/nasional/20231030235425-12-1017907/karhutla-di-jambi-10-pelaku-ditangkap-tak-ada-perusahaan-terlibat"
+      style="text-align: center;" target="_blank">
+      Karhutla di Jambi: 10 Pelaku Ditangkap, Tak Ada Perusahaan Terlibat</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/44.jpeg') }}" alt="Gambar Artikel 44">
+      <a href="https://www.cnnindonesia.com/nasional/20231030124109-12-1017631/polri-sebut-12-senpi-milik-syl-untuk-olahraga"
+      style="text-align: center;" target="_blank">
+      Polri Sebut 12 Senpi Milik SYL untuk Olahraga</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/45.jpeg') }}" alt="Gambar Artikel 45">
+      <a href="https://www.cnnindonesia.com/nasional/20231028200815-12-1017151/korupsi-masjid-sriwijaya-alex-noerdin-lunasi-cicilan-denda-rp1-m"
+      style="text-align: center;" target="_blank">
+      Korupsi Masjid Sriwijaya, Alex Noerdin Lunasi Cicilan Denda Rp1 M</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/46.jpeg') }}" alt="Gambar Artikel 46">
+      <a href="https://www.cnnindonesia.com/nasional/20231027204845-12-1016926/kemensetneg-gugat-kontras-ke-ptun-diduga-soal-sengketa-informasi"
+      style="text-align: center;" target="_blank">
+      Kemensetneg Gugat KontraS ke PTUN, Diduga soal Sengketa Informasi</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/47.jpeg') }}" alt="Gambar Artikel 47">
+      <a href="https://www.cnnindonesia.com/nasional/20231103115726-12-1019535/kpk-tambah-masa-penahanan-syahrul-yasin-limpo-dkk-40-hari"
+      style="text-align: center;" target="_blank">
+      KPK Tambah Masa Penahanan Syahrul Yasin Limpo dkk 40 Hari</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/48.jpg') }}" alt="Gambar Artikel 48">
+      <a href="https://www.cnnindonesia.com/nasional/20231103074511-12-1019429/jimly-ungkap-saldi-isra-arief-hidayat-tak-tahan-masalah-internal-mk"
+      style="text-align: center;" target="_blank">
+      Jimly Ungkap Saldi Isra & Arief Hidayat Tak Tahan Masalah Internal MK</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/49.jpeg') }}" alt="Gambar Artikel 49">
+      <a href="https://www.cnnindonesia.com/nasional/20231102210624-12-1019391/panji-gumilang-disebut-pakai-dana-iuran-santri-untuk-bayar-cicilan"
+      style="text-align: center;" target="_blank">
+      Panji Gumilang Disebut Pakai Dana Iuran Santri untuk Bayar Cicilan</a>
+    </div>
+    <div class="article">
+      <img src="{{ url_for('static', filename='img/Berita/CNN/50.jpeg') }}" alt="Gambar Artikel 50">
+      <a href="https://www.cnnindonesia.com/nasional/20231102181708-12-1019317/polri-sita-uang-rp223-miliar-dari-rekening-panji-gumilang"
+      style="text-align: center;" target="_blank">
+      Polri Sita Uang Rp223 Miliar dari Rekening Panji Gumilang</a>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

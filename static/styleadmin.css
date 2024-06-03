@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* header  */
+.navbar {
+    background-color: #333;
+}
+
+.navbar a {
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    font-size: large;
+}
+
+.navbar a:hover {
+    color: rgb(235, 235, 235);
+}
+   
+.nav.justify-content-start li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+ 
+.nav.justify-content-start li a:hover {
+    color: rgb(235, 235, 235);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border: 2px;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Form styling */
+form {
+    margin-right: 20px;
+    text-align: right;
+    
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(39, 162, 255);
+}
+
+/* Link styling */
+a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}

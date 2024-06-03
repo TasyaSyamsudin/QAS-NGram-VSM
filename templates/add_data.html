@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Data</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleadminaddedit.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Bree+Serif&family=Outfit&family=Overpass:wght@800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Bree+Serif&family=Outfit&family=Overpass:wght@800&family=Palanquin+Dark:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include 'headeradmin.html' %}
+    <main>
+        <div class="h4 pb-2 mb-4 text-black border-bottom border-black">
+            Tambahkan Data
+        </div>
+    
+    <form method="post" action="{{ url_for('add_data') }}">
+        <label for="new_data">New Data:</label>
+        <input type="text" id="new_data" name="new_data" required>
+        
+        <button type="submit" style="background-color: rgb(30, 173, 126)">
+            Add</button>
+    </form>
+    <br>
+    <br>
+    <form action="/view_data" style="border-radius: 10px;">
+        <button type="submit">Back to View Data</button>
+    </form>
+    </main> 
+</body>
+</html>

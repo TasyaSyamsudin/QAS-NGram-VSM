@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+.navbar {
+    background-color: #720000;
+}
+
+.navbar a {
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    font-size: large;
+}
+
+.navbar a:hover {
+    color: rgb(235, 235, 235);
+}
+   
+.nav.justify-content-end li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+ 
+.nav.justify-content-end li a:hover {
+    color: rgb(235, 235, 235);
+}
+
+.containerr img{
+    width: 100%;
+    height: auto;
+}
+
+.headlineaktivitas h2 {
+    text-align: center;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.aktivitas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 50px;
+    margin: 3%;
+    text-align: center;
+}
+
+.aktivitas img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    cursor: auto;
+}
+
+.penutup h6 {
+    text-align: center;
+    background-color: #720000;
+    color: white;
+}
+
+.QAShukum {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label, button {
+    display: flexbox;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #720000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question, .preprocessed-question {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.answer-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.answer-list li {
+    margin-bottom: 20px; /* Jarak antar li */
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.berita {
+    display: grid;
+    justify-content: flex-start;
+    row-gap: 50px;
+    margin: 3%;
+    text-align: center;
+}
+
+.berita img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    cursor: auto;
+}
+
+.containerartikel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.artikel {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus artikel ke baris berikutnya jika tidak cukup ruang */
+}
+
+.article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px; /* Jarak antara artikel */
+    flex: 1; /* Membagi ruang secara merata antara artikel */
+    min-width: 200px; /* Lebar maksimum artikel */
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article a {
+    font-size: 18px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 3px 0;
+}
+
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_main .image img{
+    width: 450px;
+    position: relative;
+    top: 60px;
+}
+
+.about .about_main .about_text h1 span{
+    color: #720000;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+
+.about .about_main .about_text h3{
+    font-size: 30px;
+    margin: 0 0 5px 0;
+}
+
+.about .about_main .about_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
